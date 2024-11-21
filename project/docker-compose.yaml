@@ -4,7 +4,10 @@ services:
     container_name: nestjs
     build:
       context: ./
+      target: development
     ports:
       - 3000:3000
+    environment:
+      - NODE_EXTRA_CA_CERTS=/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem
     volumes:
       - /etc/pki/ca-trust:/etc/pki/ca-trust

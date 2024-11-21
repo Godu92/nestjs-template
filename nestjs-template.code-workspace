@@ -1,0 +1,40 @@
+{
+	"folders": [
+		{
+			"path": ".",
+			"name": "ROOT"
+		},
+		{
+			"path": "db",
+			"name": "PostgreSQL"
+		},
+		{
+			"path": "project",
+			"name": "NestJs"
+		}
+	],
+	"settings": {
+		"sqltools.connections": [
+			{
+				"previewLimit": 50,
+				"server": "localhost",
+				"port": 5432,
+				"driver": "PostgreSQL",
+				"name": "db",
+				"database": "db",
+				"username": "user",
+				"password": "password123!"
+			}
+		],
+		"jest.disabledWorkspaceFolders": [
+			"ROOT",
+			"PostgreSQL",
+		],
+		"jest.jestCommandLine": "source ~/.zshrc && nvm use node && nvm use 22 && npm test --",
+	},
+	"extensions": {
+		"recommendations": [
+			"orta.vscode-jest"
+		]
+	}
+}

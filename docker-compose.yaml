@@ -1,0 +1,9 @@
+## Networks
+networks:
+  default:
+    driver: bridge
+    name: proxy
+
+include:
+  - ./project/docker-compose.yaml
+  - ./db/docker-compose.yaml

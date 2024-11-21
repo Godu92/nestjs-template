@@ -1,0 +1,10 @@
+services:
+  nestjs:
+    image: nestjs
+    container_name: nestjs
+    build:
+      context: ./
+    ports:
+      - 3000:3000
+    volumes:
+      - /etc/pki/ca-trust:/etc/pki/ca-trust

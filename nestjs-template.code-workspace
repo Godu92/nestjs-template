@@ -22,7 +22,7 @@
 				"driver": "PostgreSQL",
 				"name": "db",
 				"database": "db",
-				"username": "user",
+				"username": "username",
 				"password": "password123!"
 			}
 		],

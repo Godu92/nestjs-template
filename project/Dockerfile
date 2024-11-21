@@ -7,6 +7,7 @@ FROM ${IMAGE_NAME}:${IMAGE_TAG} AS development
 ENV INSTALL=/usr/src/app
 WORKDIR ${INSTALL}
 
+## Annoying work around needed for RHEL 8
 COPY ./certs/tls-ca-bundle.pem /etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem
 ENV NODE_EXTRA_CA_CERTS=/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem
 
